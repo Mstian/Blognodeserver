@@ -10,6 +10,8 @@ const studyCategoryRouter = require('./router/study/studyCategoryRouter')
 const studyRouter = require('./router/study/study');
 const toolsRouter = require('./router/tools/tools');
 const commentRouter = require("./router/comment/comment");
+const friendChainRouter = require('./router/friend/friendRouter');
+const bannerRouter = require('./router/banner/banner');
 app.use(cors());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}));
@@ -19,6 +21,8 @@ app.use('/study',studyCategoryRouter);
 app.use('/study',studyRouter);
 app.use('/tools',toolsRouter);
 app.use('/comment',commentRouter);
+app.use('/friend',friendChainRouter);
+app.use('/banner',bannerRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -949,6 +949,129 @@
   },
   {
     "type": "post",
+    "url": "/banner/delete",
+    "title": "删除banner",
+    "name": "删除banner",
+    "group": "Banner",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>bannerid</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/banner/banner.js",
+    "groupTitle": "Banner"
+  },
+  {
+    "type": "post",
+    "url": "/banner/add",
+    "title": "添加banner",
+    "name": "添加banner",
+    "group": "Banner",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "url",
+            "description": "<p>banner图链接地址</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "link",
+            "description": "<p>banner跳转地址</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/banner/banner.js",
+    "groupTitle": "Banner"
+  },
+  {
+    "type": "get",
+    "url": "/banner/get",
+    "title": "获取banner列表",
+    "name": "获取banner列表",
+    "group": "Banner",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/banner/banner.js",
+    "groupTitle": "Banner"
+  },
+  {
+    "type": "post",
     "url": "/comment/delete",
     "title": "删除一条留言",
     "name": "删除一条留言",
@@ -1069,6 +1192,129 @@
     "version": "0.0.0",
     "filename": "router/comment/comment.js",
     "groupTitle": "Comment"
+  },
+  {
+    "type": "post",
+    "url": "/friend/delete",
+    "title": "删除友链",
+    "name": "删除友链",
+    "group": "Friend",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>链接id</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/friend/friendRouter.js",
+    "groupTitle": "Friend"
+  },
+  {
+    "type": "post",
+    "url": "/friend/add",
+    "title": "增加友链",
+    "name": "增加友链",
+    "group": "Friend",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "link",
+            "description": "<p>链接</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>名称</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/friend/friendRouter.js",
+    "groupTitle": "Friend"
+  },
+  {
+    "type": "get",
+    "url": "/friend/get",
+    "title": "获取友链",
+    "name": "获取友链",
+    "group": "Friend",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "err",
+            "description": "<p>错误码.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>信息.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "router/friend/friendRouter.js",
+    "groupTitle": "Friend"
   },
   {
     "type": "post",
